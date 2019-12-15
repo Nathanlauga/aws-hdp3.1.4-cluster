@@ -4,6 +4,11 @@ Hello everyone, this is a repository to find all procedure to easily create a cl
 
 **IMPORTANT :** this repository is for a school project so, I will not maintain it so I hope it could help you, but it was made by a curious Data Scientist ;) 
 
+## Ressources
+
+* [AWS Console](https://aws.amazon.com/console/)
+* [Ambari 2.7.4.0 installation](https://docs.cloudera.com/HDPDocuments/Ambari-2.7.4.0/bk_ambari-installation/content/ch_Getting_Ready.html)
+
 ## Procedure detail
 
 This procedure helps you through machine setup for the Ambari server, and ambari agents. So to the first connection with ssh to the host confirmation. **The next steps (like choosing Service, for example Spark & Zeppelin notebook) will not be cover here but you will find some bugs that I had in the `bugs/` directory**.
@@ -23,5 +28,5 @@ I create a security group is not that secured, but it was not my goal so here is
 This section is based on the following documentation : [Apache Ambari Installation
 PDF](https://docs.cloudera.com/HDPDocuments/Ambari-2.7.4.0/bk_ambari-installation/content/ch_Getting_Ready.html).
 
-    git clone thisrepo.com
+    git clone https://github.com/Nathanlauga/aws-hdp3.1.4-cluster
 
