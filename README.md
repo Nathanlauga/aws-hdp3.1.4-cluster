@@ -2,7 +2,7 @@
 
 Hello everyone, this is a repository to find all procedure to easily create a cluster using AWS services and Hortonworks with the latest version of HDP (3.1.4.0).
 
-**IMPORTANT : ** this repository is for a school project so, I will not maintain it so I hope it could help you, but it was made by a curious Data Scientist ;) 
+**IMPORTANT :** this repository is for a school project so, I will not maintain it so I hope it could help you, but it was made by a curious Data Scientist ;) 
 
 ## Procedure detail
 
