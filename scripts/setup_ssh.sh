@@ -1,3 +1,3 @@
 #!/bin/bash
 ssh-keygen
-cat /root/.ssh/id_rsa
+cat /root/.ssh/id_rsa.pub

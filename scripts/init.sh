@@ -1,16 +1,16 @@
 #!/bin/bash
 if [[ $# -eq 0 ]] ; then
-    echo 'You need to set the current machine hostname (it has to be the same as the one into /var/hosts) as argument! 
+    echo 'You need to set the current machine hostname (it has to be the same as the one into var/hosts) as argument! 
     Example : ./init.sh ambari-server `'
     exit 0
 fi
 
-hosts=$(<var/hosts)
-id_rsa=$(<var/id_rsa)
-hostname=$(<var/hostname)
+hosts=$(<$PWD/var/hosts)
+id_rsa=$(<$PWD/var/id_rsa)
+hostname=$(<$PWD/var/hostname)
 
 if [[ -z "$id_rsa" ]] ; then
-    echo 'You need to put the id_rsa.pub of the ambari-server into /var/id_rsa`'
+    echo 'You need to put the id_rsa.pub of the ambari-server into var/id_rsa`'
     exit 0
 fi
 
