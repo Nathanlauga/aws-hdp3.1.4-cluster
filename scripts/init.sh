@@ -7,7 +7,7 @@ fi
 
 hosts=$(<$PWD/var/hosts)
 id_rsa=$(<$PWD/var/id_rsa)
-hostname=$(<$PWD/var/hostname)
+hostname=$1
 
 if [[ -z "$id_rsa" ]] ; then
     echo 'You need to put the id_rsa.pub of the ambari-server into var/id_rsa`'
@@ -16,10 +16,9 @@ fi
 
 
 # starting setup
-sudo su
-sudo apt update
-sudo apt upgrade
-sudo apt install python2.7 python python2.7-dev ntp selinux-utils
+apt update
+apt upgrade
+apt install python2.7 python python2.7-dev ntp selinux-utils
 
 # ssh password less for ambari server
 echo "$id_rsa" >> /root/.ssh/authorized_keys
@@ -31,8 +30,8 @@ chmod 600 /root/.ssh/authorized_keys
 # vi /etc/ssh/sshd_config
 # AuthorizedKeysFile      /root/.ssh/authorized_keys      .ssh/authorized_keys
 
-hostname $id_rsa
-hostnamectl set-hostname $id_rsa
+hostname "$hostname"
+hostnamectl set-hostname "$hostname"
 
 # vi /etc/cloud/cloud.cfg
     # preserve_hostname: true
