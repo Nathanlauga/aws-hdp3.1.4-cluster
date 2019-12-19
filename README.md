@@ -69,6 +69,10 @@ After init done on each machine, you can install `ambari-server` on your machine
 ./setup_ambari_server.sh
 ```
 
+You can connect to your Ambari server with Public IP of AWS machine at port 8080.
+    login : admin
+    password : admin
+
 ## [Optional] Setup MySQL db for hive and others services
 
 Some HDP services require a database so you can install MySQL by executing the following script on any machine you want (prefer one with storage capacity).

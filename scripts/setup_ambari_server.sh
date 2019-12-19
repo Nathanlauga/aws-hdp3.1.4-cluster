@@ -16,3 +16,6 @@ apt-get install ambari-server
 # Setup ambari server
 ambari-server setup
 ambari-server setup --jdbc-db=mysql --jdbc-driver=/usr/share/java/mysql-connector-java.jar
+
+# Start server
+ambari-server start
